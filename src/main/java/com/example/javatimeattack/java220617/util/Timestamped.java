@@ -1,4 +1,4 @@
-package com.example.javatimeattack.java220610;
+package com.example.javatimeattack.java220617.util;
 
 import lombok.Getter;
 import org.springframework.data.annotation.CreatedDate;

@@ -1,4 +1,4 @@
-package com.example.javatimeattack.java220610;
+package com.example.javatimeattack.java220617.dto;
 
 import lombok.Getter;
 

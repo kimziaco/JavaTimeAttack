@@ -1,5 +1,7 @@
-package com.example.javatimeattack.java220610;
+package com.example.javatimeattack.java220617.entity;
 
+import com.example.javatimeattack.java220617.dto.UserRequestDto;
+import com.example.javatimeattack.java220617.util.Timestamped;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
@@ -9,6 +11,7 @@ import javax.persistence.*;
 @NoArgsConstructor
 @Getter
 @Entity
+@Table(name="T_users")
 public class User extends Timestamped {
 
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -42,7 +45,6 @@ public class User extends Timestamped {
     }
 
     public void update(UserRequestDto requestDto) {
-        this.email = requestDto.getEmail();
         this.name = requestDto.getName();
         this.age = requestDto.getAge();
         this.gender = requestDto.getGender();
